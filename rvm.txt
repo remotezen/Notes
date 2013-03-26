@@ -1,0 +1,2 @@
+rvm get head && rvm reload
+rvm install 1.9.3

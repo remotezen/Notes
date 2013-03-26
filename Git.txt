@@ -1,0 +1,10 @@
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+git config --global alias.co checkout
+git config --global core.editor "gvim -f"
+git checkout -f "repair accidental deletion"
+
+GitHub
+########
+git remote add orgin git@github.com:remotezen/first_app.git
+git push -u origin master

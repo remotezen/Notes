@@ -1,0 +1,1 @@
+bundle instasll --without production

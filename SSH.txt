@@ -1,0 +1,4 @@
+cd ~/.ssh
+ssh-keygen -t rsa -C "youremail.com"
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub

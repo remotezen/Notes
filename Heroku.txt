@@ -1,0 +1,13 @@
+heroku login
+heroku create
+git push heroku master
+heroku open
+heroku rename "your new app name for heroku"
+install heroku toolbelt
+===============
+heroku create
+
+heroku keys:add
+git push
+git push heroku master
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh

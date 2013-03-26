@@ -1,2 +1,3 @@
 rvm get head && rvm reload
 rvm install 1.9.3
+rvm --default use 2.0

@@ -3,4 +3,6 @@ rails new newapp --edge
 rake db:create
 rake db:migrate
 rails g controller StaticPages home help --no-test-framework
+rails destroy [controller, model]
+rake db:[migrate, rollback]
 

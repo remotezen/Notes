@@ -1,2 +1,6 @@
 rails g rspec:install
+##add line to spec/spec_helper.rb
+config.include Capybara::DSL
+bundle exec spork --bootstrap
+bundle exec spork
 

@@ -1,8 +1,31 @@
-bundle instasll --without production
+bundle install --without production
 rails new newapp --edge
 rake db:create
 rake db:migrate
 rails g controller StaticPages home help --no-test-framework
 rails destroy [controller, model]
 rake db:[migrate, rollback]
+Scaffolding
+==============
+rails g scaffold User name:string emails:string
+
+Rails Secret Token Generator
+==============================
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+SampleApp::Application.config.secret_key_base = secure_token
+
 

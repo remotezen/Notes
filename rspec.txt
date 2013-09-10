@@ -1,3 +1,4 @@
+rails new sample_app --skip-test-unit
 rails g rspec:install
 ##add line to spec/spec_helper.rb
 config.include Capybara::DSL

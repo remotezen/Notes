@@ -3,6 +3,7 @@ git config --global user.email "Your Email"
 git config --global alias.co checkout
 git config --global core.editor "gvim -f"
 git checkout -f "repair accidental deletion"
+git checkout -b "static-pages"
 
 GitHub
 ########
